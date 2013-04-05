@@ -1,22 +1,26 @@
 # lein-lazytest
 
-Leiningen plugin for lazytest
+Leiningen plugin for Stuart Sierra's lazytest (https://github.com/stuartsierra/lazytest).
+
 ## Installation 
-in project.clj under dev dependencies add 
 
-[lein-lazytest "1.0.1"]
+Clojars:
 
-The jar i located at clojars.org
+```clojure
+:plugins [[eightnotrump/lein-lazytest "1.0.5"]]
+```
 
 ## Usage
-in projcect.clj 
 
-define :lazytest-path ["src" "test"]
-
+```shell
 lein lazytest
+```
+
+Use ```:lazytest-path [...paths...]``` in project.clj to add paths
+(defaults are "src", "test").
 
 ## License
 
-Copyright (C) 2010 
+Copyright (C) 2013 Mike Thvedt, Steen Larsen (https://github.com/surt666), other contributors 
 
 Distributed under the Eclipse Public License, the same as Clojure.
